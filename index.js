@@ -11,7 +11,6 @@ var sevenHalfLac = 750000;
 var tenLac = 1000000;
 var tweleveHalfLac = 1250000;
 var fifteenLac = 1500000;
-var fiftyLac = 5000000;
 
 const readline = require('readline');
 
@@ -45,7 +44,7 @@ function calcualteIncomTax(){
 
     if(age > 80){
         console.log("above 80")
-        if (income < fiftyLac) {
+        if (income < fiveLac) {
             tax = 0;
         } else if (income > tenLac) {
             tax = 37500 + (income - tenLac) * 0.3;
@@ -57,7 +56,7 @@ function calcualteIncomTax(){
         
     }else if(age< 80 && age>60){
         console.log("60 to 80")
-        if (income < fiftyLac) {
+        if (income < fiveLac) {
             tax = 0;
         } else if (income > tenLac) {
             tax = 37500 + (income - tenLac) * 0.3;
@@ -71,7 +70,7 @@ function calcualteIncomTax(){
         }
         
     }else{
-        if (income < fiftyLac) {
+        if (income < fiveLac) {
             tax = 0;
         } else if (income > fifteenLac) {
             tax = 187500 + (income - fifteenLac) * 0.3;
