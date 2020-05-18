@@ -48,8 +48,8 @@ function calcualteIncomTax(){
             tax = 0;
         } else if (income > tenLac) {
             tax = 37500 + (income - tenLac) * 0.3;
-        } else if (income > 500000 && income < tenLac) {
-            tax = 12500 + (income - 500000) * 0.2;
+        } else if (income > fiveLac && income < tenLac) {
+            tax = 12500 + (income - fiveLac) * 0.2;
         } else {
             tax = 0;
         }
